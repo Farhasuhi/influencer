@@ -128,11 +128,15 @@
 
     .banner-info {
         padding: 20px 100px;
+        text-align: center;
     }
 
     .banner-img img {
         width: 202px;
         height: 190px;
+    }
+    .primary-btn {
+        margin-left: 50px;
     }
     .band-name{
        grid-template-columns: repeat(4,1fr);
