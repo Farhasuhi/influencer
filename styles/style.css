@@ -127,8 +127,7 @@
     }
 
     .banner-info {
-        padding: 20px 100px;
-        text-align: center;
+        padding: 0;
     }
 
     .banner-img img {
@@ -136,11 +135,11 @@
         height: 190px;
     }
     .primary-btn {
-        margin-left: 50px;
+        /* margin-left: 30px; */
     }
     .band-name{
        grid-template-columns: repeat(4,1fr);
-       padding: 30px;
+       padding: 13px;
        gap: 5px;
     }
 }
