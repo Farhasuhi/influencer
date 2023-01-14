@@ -94,11 +94,14 @@
 .band-name{
     display: grid;
     grid-template-columns: repeat(7,1fr);
+    align-items: center;
     max-width: 1110px;
+    max-height: 60px;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     gap: 60px;
-    padding: 36px 54px 34px 62px ;
+    padding: 30px 60px 55px ;
     border: 3px solid grey;
 }
 .band-name:hover{
@@ -139,7 +142,11 @@
     }
     .band-name{
        grid-template-columns: repeat(4,1fr);
-       padding: 13px;
+       padding: 15px;
        gap: 5px;
+       border: none
+    }
+    .band-name:hover{
+        border: none;
     }
 }
