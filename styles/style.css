@@ -49,7 +49,7 @@
     background-size: contain;
 }
 
-.banner-img img{
+.banner-img img {
     width: 100%;
 }
 
@@ -76,7 +76,7 @@
 .parimary-btn {
     display: flex;
     align-items: center;
-    gap:8px;
+    gap: 8px;
     border: none;
     font-weight: 700;
     font-size: 1rem;
@@ -91,24 +91,27 @@
 /* media Queries */
 
 @media only screen and (max-width:576px) {
-    .container,.navbar{
+    .container {
         flex-direction: column;
         align-items: center;
-        padding: 50px;
-    }
-    .banner{
-        flex-direction: column-reverse;
-    }
-    .banner-img{
-        Width:202px;
-        Height:190px;
-    }
-    .navbar{
+        padding: 20px 20px;
         gap: 8px;
     }
-    .banner-info {
-        padding:50px;
+
+    .navbar {
+        flex-direction: column;
     }
 
-    
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-info {
+        padding: 0 70px;
+    }
+
+    .banner-img img {
+        width: 202px;
+        height: 190px;
+    }
 }
