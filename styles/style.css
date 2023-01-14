@@ -77,7 +77,7 @@
     color: #3A3A3A;
 }
 
-.parimary-btn {
+.primary-btn {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -92,8 +92,8 @@
 }
 /* band-name styles */
 .band-name{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
     max-width: 1110px;
     width: 100%;
     margin: 0 auto;
@@ -103,6 +103,9 @@
 }
 .band-name:hover{
     border: 3px solid blue;
+}
+.band-name img{
+    white-space: 100%;
 }
 
 /* media Queries */
@@ -124,7 +127,7 @@
     }
 
     .banner-info {
-        padding: 0 70px;
+        padding: 20px 100px;
     }
 
     .banner-img img {
@@ -132,8 +135,8 @@
         height: 190px;
     }
     .band-name{
-        flex-direction: column;
-        /* flex-wrap: nowrap; */
-        padding: 0;
+       grid-template-columns: repeat(4,1fr);
+       padding: 30px;
+       gap: 5px;
     }
 }
