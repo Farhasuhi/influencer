@@ -245,16 +245,16 @@
         padding-bottom: 20px;
     }
     .banner-info{
-        padding:14px 80px;
+        padding:14px 30px;
     }
     .band-name{
         grid-template-columns: repeat(3,1fr);
         gap: 8px; 
         border: none;      
     }
-    .top-band{
-       padding: 30px;
-    }
+    /* .top-band{
+       padding: 20px;
+    } */
     .conatiners {
         grid-template-columns: repeat(1, 1fr);
         padding: 20px;
