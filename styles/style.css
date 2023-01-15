@@ -9,7 +9,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
+
+
+/* nav part styles */
+.nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -18,8 +21,6 @@
     padding-top: 82px;
 }
 
-
-/* nav part styles */
 .label h3 {
     font-weight: 700;
     font-size: 1.5rem;
@@ -49,8 +50,14 @@
     background-size: contain;
 }
 
-.banner{
+.banner {
     padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 82px;
 }
 
 .banner-img img {
@@ -90,63 +97,177 @@
     padding: 10px 24px;
     margin-top: 16px;
 }
+
 /* band-name styles */
-.band-name{
+
+.band-name {
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
     align-items: center;
-    max-width: 1110px;
-    max-height: 60px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
     gap: 60px;
-    padding: 30px 60px 55px ;
+    padding: 30px 60px;
     border: 3px solid grey;
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
 }
-.band-name:hover{
+
+.band-name:hover {
     border: 3px solid blue;
 }
-.band-name img{
+
+.band-name img {
     white-space: 100%;
+}
+
+/* popular collection styles */
+.popular-collection {
+    padding-top: 100px;
+}
+
+.popular-collection-title h3 {
+    text-align: center;
+    padding-bottom: 40px;
+    font-weight: 600;
+    font-size: 28px;
+    color: #3A3A3A;
+}
+
+.conatiners {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.conatiner {
+    box-shadow: 0px 0px 40px #00000026;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.conatiner img {
+    width: 100%;
+}
+
+.conatiner h4 {
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+    padding-bottom: 6px;
+}
+
+.price {
+    font-weight: 400;
+    font-size: 24px;
+    color: #020101de;
+    padding-bottom: 8px;
+}
+
+.rating {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 6px;
+}
+
+.fa-star.filled,
+.fa-star-half-stroke.half-filled {
+    color: #FB8200;
+}
+
+.number-rating {
+    color: #5E6366;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.production-description {
+    color: #787885;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.other {
+    padding-top: 50px;
+    max-width: 1322px;
+    width: 100%;
+    text-align: right;
+}
+
+.other a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #e02c6dde;
+}
+
+/* featured product styles */
+.featured-product {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 96px;
+}
+
+.product-title {
+    font-weight: 700;
+    font-size: 38px;
+    color: #0A0826;
+    padding-bottom: 8px;
+}
+
+.description {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+
 }
 
 /* media Queries */
 
 @media only screen and (max-width:576px) {
-    .container {
+    .nav,.navbar{
         flex-direction: column;
         align-items: center;
-        padding: 20px 20px;
-        gap: 8px;
+        padding-top: 30px;
+        gap: 5px;
     }
-
-    .navbar {
-        flex-direction: column;
-    }
-
-    .banner {
+    .banner{
         flex-direction: column-reverse;
+        padding-top:22px;
+        padding-bottom: 20px;
     }
-
-    .banner-info {
-        padding: 0;
-    }
-
-    .banner-img img {
-        width: 202px;
-        height: 190px;
-    }
-    .primary-btn {
-        /* margin-left: 30px; */
+    .banner-info{
+        padding:14px 80px;
     }
     .band-name{
-       grid-template-columns: repeat(4,1fr);
-       padding: 15px;
-       gap: 5px;
-       border: none
+        grid-template-columns: repeat(3,1fr);
+        gap: 8px; 
+        border: none;      
     }
-    .band-name:hover{
-        border: none;
+    .top-band{
+       padding: 30px;
     }
+    .conatiners {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+
+    }
+    .featured-product{
+        flex-direction: column-reverse;
+        padding-top: 30px;
+        gap:30px;
+    }
+    .product-details{
+        padding: 0px 57px;
+    }
+
+
 }
